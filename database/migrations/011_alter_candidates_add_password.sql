@@ -1,0 +1,3 @@
+ALTER TABLE `candidates`
+  ADD COLUMN `password_hash` VARCHAR(255) NOT NULL AFTER `email`;
+

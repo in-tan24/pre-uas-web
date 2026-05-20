@@ -1,0 +1,10 @@
+CREATE TABLE `faculties` (
+  `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  `faculty_name` VARCHAR(150) NOT NULL,
+  `description` TEXT NULL,
+  `created_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `updated_at` TIMESTAMP NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `uq_faculties_name` (`faculty_name`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
